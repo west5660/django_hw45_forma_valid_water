@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="{% static 'css/style1.css' %}">
+</head>
+<body>
+    <form method="POST" novalidate>
+        {% csrf_token %}
+        {% for f in form %}
+            <div>{{ f.label_tag }}</div>
+{#            <div>{{ form.as_ul }}</div>#}
+            <div>{{ f }}</div>
+            <div>{{ f.errors }}</div>
+        {% endfor %}
+        <input type="submit" value="Send">
+    </form>
+
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+    <title>Заявка</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <h1>Заяка принята</h1>
+    <div class="animal-info">
+        <div>
+            <h4>Имя:</h4>
+            <p>{{ k1 }}</p>
+        </div>
+        <div>
+            <h4>Фамилия:</h4>
+            <p>{{ k2 }}</p>
+        </div>
+        <div>
+            <h4>Почта:</h4>
+            <p>{{ k3 }}</p>
+        </div>
+        <div>
+            <h4>Телефон:</h4>
+            <p>{{ k4 }}</p>
+        </div>
+        <div>
+            <h4>Адрес:</h4>
+            <p>{{ k5 }}</p>
+        </div>
+        <div>
+            <h4>Частота подвоза:</h4>
+            <p>{{ k6 }}</p>
+        </div>
+        <div>
+            <h4>Объем воды в заказе:</h4>
+            <p>{{ k7 }}</p>
+        </div>
+    </div>
+</body>
+</html>
